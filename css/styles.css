@@ -1,0 +1,40 @@
+/*************************************  
+ BASE STYLES  
+**************************************/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+    background-image: url("../assets/bg-main-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+   
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+
+/*************************************  
+ 768px MEDIA QUERIES
+**************************************/
+@media (min-width: 768px) { 
+    html {
+        background-image: url("../assets/bg-main-tablet.png");
+    }
+}
+
+/*************************************  
+ 1110px MEDIA QUERIES
+**************************************/
+@media (min-width: 1110px) { 
+    html {
+        background-image: url("../assets/bg-main-desktop.png");
+    }
+}
