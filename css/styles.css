@@ -8,18 +8,17 @@
 }
 
 html {
+    font-family: 'IBM Plex Sans', sans-serif;
     background-image: url("../assets/bg-main-mobile.png");
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
-   
 }
 
 body {
     margin: 0 auto;
     max-width: 1110px;
 }
-
 
 /*************************************  
  768px MEDIA QUERIES
