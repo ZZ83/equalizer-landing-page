@@ -20,7 +20,6 @@ body {
     color: #191826;
     margin: 0 auto;
     max-width: 1110px;
-    position: relative;
 }
 
 h1,
@@ -33,6 +32,7 @@ button {
 h1 {
     font-size: 40px;
     line-height: 48px;
+    letter-spacing: -1px;
 }
 
 h2 {
@@ -80,15 +80,18 @@ img {
  HEADER STYLES  
 **************************************/
 
-header {
-    height: 10rem;
+.header {
+    height: 7.5rem;
     display: flex;
     align-items: center;
 }
+    .header__logo {
+        display: block;
+    }
+    .header__art {
+        display: none;
+    }
 
-.header-bg {
-    display: none;
-}
 
 /*************************************  
  768px MEDIA QUERIES
@@ -99,17 +102,20 @@ header {
     }
 
     h1 {
-        font-size: 64px;
+        font-size:   64px;
         line-height: 64px;
     }
 
-    .header-bg {
-        display: block;
-        position: absolute;
-        top: -2.5rem;
-        right: -2.8rem;
+    .header {
+        height: 12rem;
+        position: relative;
     }
-    
+        .header__art {
+            display: block;
+            position: absolute;
+            top: -2.3rem;
+            right: -5.5rem;
+        }
 }
 
 /*************************************  
@@ -121,8 +127,9 @@ header {
     }
 
     h1 {
-        font-size: 88px;
+        font-size: 5.5rem;
         line-height: 88px;
+        
     }
 
     h2 {
@@ -134,4 +141,9 @@ header {
         font-size: 20px;
         line-height: 34px;
     }
+
+    .header__art {
+        right: -10.3rem;
+    }
 }
+
