@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    color: #191826;
     margin: 0 auto;
     max-width: 1110px;
     position: relative;
