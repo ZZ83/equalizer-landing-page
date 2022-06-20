@@ -66,6 +66,30 @@ footer p {
     line-height: 26px;
 }
 
+img {
+    width: 210px;
+    height: 430px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*************************************  
+ HEADER STYLES  
+**************************************/
+
+header {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-bg {
+    display: none;
+}
+
 /*************************************  
  768px MEDIA QUERIES
 **************************************/
@@ -78,6 +102,14 @@ footer p {
         font-size: 64px;
         line-height: 64px;
     }
+
+    .header-bg {
+        display: block;
+        position: absolute;
+        top: -2.5rem;
+        right: -2.8rem;
+    }
+    
 }
 
 /*************************************  
