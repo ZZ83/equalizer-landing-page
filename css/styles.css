@@ -12,7 +12,7 @@ html {
     font-family: 'IBM Plex Sans', sans-serif;
     background-image: url("../assets/bg-main-mobile.png");
     background-repeat: no-repeat;
-    background-position: 2% 40%;
+    background-position: 2% 70%;
     background-size: 582px, 780px;
     overflow-x: hidden;
 }
@@ -33,6 +33,7 @@ h1 {
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -1px;
+    max-width: 350px;
 }
 
 h2 {
@@ -71,15 +72,17 @@ img {
     height: 430px;
 }
 
-.wrapper {
+.wrapper,
+.container {
     margin: 0 auto;
-    max-width: 1440px;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
+.wrapper {
+    max-width: 1440px;
 }
+    .container {
+        width: 90%;
+    }
 
 /*************************************  
  HEADER STYLES  
@@ -93,8 +96,14 @@ img {
 }
 
 /*************************************  
- 768px MEDIA QUERIES
+MEDIA QUERIES
 **************************************/
+@media (min-width: 415px) { 
+    h1 {
+        max-width: 420px;
+    }
+}
+
 @media (min-width: 768px) { 
     html {
         background-image: url("../assets/bg-main-tablet.png");
@@ -119,11 +128,13 @@ img {
             background-image: url("../assets/bg-pattern-1.svg");
             background-repeat: no-repeat;
         }
+
+    .intro__para {
+        width: 70%;
+        max-width: 850px;
+    }
 }
 
-/*************************************  
- 1110px MEDIA QUERIES
-**************************************/
 @media (min-width: 1110px) { 
     html {
         background-image: url("../assets/bg-main-desktop.png");
@@ -134,7 +145,7 @@ img {
     h1 {
         font-size: 5.5rem;
         line-height: 88px;
-        
+        max-width: 700px;
     }
 
     h2 {
@@ -152,3 +163,8 @@ img {
     }
 }
 
+@media (min-width: 1250px) { 
+    h1 {
+        max-width: 920px;
+    }
+}
