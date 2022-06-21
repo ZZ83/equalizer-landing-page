@@ -12,8 +12,8 @@ html {
     font-family: 'IBM Plex Sans', sans-serif;
     background-image: url("../assets/bg-main-mobile.png");
     background-repeat: no-repeat;
-    background-position: 2% 70%;
-    background-size: 582px, 780px;
+    background-position: 2% -20%;
+    background-size: 36.25rem, 48.75rem;
     overflow-x: hidden;
 }
 
@@ -30,46 +30,50 @@ button {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     letter-spacing: -1px;
-    max-width: 350px;
+    max-width: 22rem;
 }
 
 h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 span {
-    font-size: 65px;
-    line-height: 52px;
+    font-size: 4.063rem;
+    line-height: 3.25rem;
 }
 
 /* Might change later when working on eq div */
 .price p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 2rem;
 }
 
 button {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+footer {
+    overflow-x: hidden;
 }
 
 footer p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625rem;
 }
 
 img {
-    width: 210px;
-    height: 430px;
+    width: 13.125rem;
+    height: 26.875rem;
 }
 
 .wrapper,
@@ -78,11 +82,16 @@ img {
 }
 
 .wrapper {
-    max-width: 1440px;
+    max-width: 90rem;
 }
     .container {
         width: 90%;
     }
+
+.eq {
+    border-radius: 12px;
+    background-color: #191826;
+}
 
 /*************************************  
  HEADER STYLES  
@@ -100,28 +109,28 @@ MEDIA QUERIES
 **************************************/
 @media (min-width: 415px) { 
     h1 {
-        max-width: 420px;
+        max-width: 26rem;
     }
 }
 
 @media (min-width: 768px) { 
     html {
         background-image: url("../assets/bg-main-tablet.png");
-        background-position: 85% 40%;
+        background-position: 95% -70%;
         background-size: 1283px 1108px;
     }
 
     h1 {
-        font-size:   64px;
-        line-height: 64px;
+        font-size:   4rem;
+        line-height: 4rem;
     }
 
     .header {
         height: 12rem;
     }
         .header__art {
-            width: 312px;
-            height: 468px;
+            width: 19.5rem;
+            height: 29.25rem;
             position: absolute;
             top: -2rem;
             right: -5.5rem;
@@ -131,31 +140,31 @@ MEDIA QUERIES
 
     .intro__para {
         width: 70%;
-        max-width: 850px;
+        max-width: 53.125rem;
     }
 }
 
 @media (min-width: 1110px) { 
     html {
         background-image: url("../assets/bg-main-desktop.png");
-        background-position: 50% 15%;
-        background-size: 1913px 2058px;
+        background-position: 60% 75%;
+        background-size: 119.563rem 128.625rem;
     }
 
     h1 {
         font-size: 5.5rem;
-        line-height: 88px;
-        max-width: 700px;
+        line-height: 5.5rem;
+        max-width: 44rem;
     }
 
     h2 {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 2.5rem;
+        line-height: 3.25rem;
     }
 
     p {
-        font-size: 20px;
-        line-height: 34px;
+        font-size: 1.25rem;
+        line-height: 2.125rem;
     }
 
     .header__art {
@@ -165,6 +174,6 @@ MEDIA QUERIES
 
 @media (min-width: 1250px) { 
     h1 {
-        max-width: 920px;
+        max-width: 57.5rem;
     }
 }
