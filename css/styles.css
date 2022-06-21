@@ -11,15 +11,15 @@ html {
     background-color: #FCFAF9;
     font-family: 'IBM Plex Sans', sans-serif;
     background-image: url("../assets/bg-main-mobile.png");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 2% 40%;
+    background-size: 582px, 780px;
 }
 
 body {
     color: #191826;
     margin: 0 auto;
-    max-width: 1110px;
+    max-width: 1440px;
 }
 
 h1,
@@ -85,13 +85,6 @@ img {
     display: flex;
     align-items: center;
 }
-    .header__logo {
-        display: block;
-    }
-    .header__art {
-        display: none;
-    }
-
 
 /*************************************  
  768px MEDIA QUERIES
@@ -99,6 +92,8 @@ img {
 @media (min-width: 768px) { 
     html {
         background-image: url("../assets/bg-main-tablet.png");
+        background-position: 85% 40%;
+        background-size: 1283px 1108px;
     }
 
     h1 {
@@ -108,14 +103,7 @@ img {
 
     .header {
         height: 12rem;
-        position: relative;
     }
-        .header__art {
-            display: block;
-            position: absolute;
-            top: -2.3rem;
-            right: -5.5rem;
-        }
 }
 
 /*************************************  
@@ -124,6 +112,8 @@ img {
 @media (min-width: 1110px) { 
     html {
         background-image: url("../assets/bg-main-desktop.png");
+        background-position: 50% 15%;
+        background-size: 1913px 2058px;
     }
 
     h1 {
@@ -140,10 +130,6 @@ img {
     p {
         font-size: 20px;
         line-height: 34px;
-    }
-
-    .header__art {
-        right: -10.3rem;
     }
 }
 
