@@ -57,6 +57,21 @@ main {
 }
 
 /*************************************  
+WRAPPER / CONTAINERS STYLES  
+**************************************/
+.wrapper,
+.container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 78.125rem;
+}
+    .container {
+        width: 90%;
+    }
+
+/*************************************  
 BUTTON STYLES  
 **************************************/
 .btn {
@@ -103,21 +118,6 @@ BUTTON STYLES
     width: 90%;
     margin-top: -2rem;
 }
-
-/*************************************  
-WRAPPER / CONTAINERS STYLES  
-**************************************/
-.wrapper,
-.container {
-    margin: 0 auto;
-}
-
-.wrapper {
-    max-width: 78.125rem;
-}
-    .container {
-        width: 90%;
-    }
 
 /*************************************  
  HEADER STYLES  
@@ -188,7 +188,6 @@ PREMIUM EQ STYLES
     .premium-eq__heading {
         margin-bottom: 0;
     }
-
     .premiun__price {
         font-size: 1.25rem;
         line-height: 2rem;
@@ -230,7 +229,7 @@ MEDIA QUERIES
 @media (min-width: 768px) { 
     html {
         background-image: url("../assets/bg-main-tablet.png");
-        background-position: 80% -20%;
+        background-position: 80% -38%;
         background-size: 1283px 1108px;
     }
 
@@ -306,7 +305,7 @@ MEDIA QUERIES
 @media (min-width: 1110px) { 
     html {
         background-image: url("../assets/bg-main-desktop.png");
-        background-position: 60% 75%;
+        background-position: 50% 200%;
         background-size: 119.563rem 128.625rem;
     }
 
@@ -368,6 +367,11 @@ MEDIA QUERIES
 }
 
 @media (min-width: 1250px) { 
+    html {
+        background-position: 60% 150%;
+        
+    }
+
     h1 {
         max-width: 57.5rem;
     }
