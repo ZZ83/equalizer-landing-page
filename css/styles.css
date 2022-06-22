@@ -56,10 +56,6 @@ main {
     margin-bottom: 20rem;
 }
 
-footer {
-    overflow-x: hidden;
-}
-
 footer p {
     font-size: 1rem;
     line-height: 1.625rem;
@@ -198,6 +194,29 @@ BUTTON STYLES
         }
 
 /*************************************  
+FOOTER STYLES  
+**************************************/
+
+.footer {
+    width: 90%;
+    max-width: 23rem;
+    margin: 25.5rem auto 5rem;
+}
+    .footer__text {
+        max-width: 23rem;
+    }
+    .footer__logo {
+        margin-bottom: 1rem;
+    }
+    .footer__icons {
+        margin-top: 4rem;
+        width: 6.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+/*************************************  
 MEDIA QUERIES
 **************************************/
 @media (min-width: 415px) { 
@@ -262,6 +281,26 @@ MEDIA QUERIES
             top: 10rem;
             right: 3.63rem;
         }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: none;
+    }
+        .footer__logo {
+            width: 100%;
+        }
+
+        .footer__text {
+            width: 50%;
+            
+        }
+
+        .footer__icons {
+           margin-top: 0;
+           margin-left: auto;
+        }
 }
 
 @media (min-width: 1110px) { 
@@ -308,6 +347,23 @@ MEDIA QUERIES
         height: 39.063rem;
         right: 7rem;
     }
+
+    .footer {
+        justify-content: space-between;
+    }
+        .footer__logo {
+            width: 13%;
+            margin-bottom: auto;
+        }
+
+        .footer__text {
+            margin-top: 0;
+            margin-right: 15rem;
+        }
+
+        .footer__icons {
+           margin: 0;
+        }
 }
 
 @media (min-width: 1250px) { 
