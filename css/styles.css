@@ -56,15 +56,9 @@ main {
     margin-bottom: 20rem;
 }
 
-footer p {
-    font-size: 1rem;
-    line-height: 1.625rem;
-}
-
 /*************************************  
 BUTTON STYLES  
 **************************************/
-
 .btn {
     height: 3.813rem;
     font-size: 1.125rem;
@@ -87,15 +81,20 @@ BUTTON STYLES
     background-color: #FCFAF9;
 }
 
+.btn--ios:hover {
+    background-color: #66E2DC;
+}
+.btn--android:hover {
+    background-color: #FFB964;
+}
+
 .btn::before {
     padding-top:   0.3rem;
     padding-right: 0.6rem;
 }
-
 .btn--ios::before {
     content: url(../assets/icon-apple.svg);
 }
-
 .btn--android::before {
     content: url(../assets/icon-android.svg);
 }
@@ -105,6 +104,9 @@ BUTTON STYLES
     margin-top: -2rem;
 }
 
+/*************************************  
+WRAPPER / CONTAINERS STYLES  
+**************************************/
 .wrapper,
 .container {
     margin: 0 auto;
@@ -117,16 +119,9 @@ BUTTON STYLES
         width: 90%;
     }
 
-/* Might change later when working on eq div */
-.price p {
-    font-size: 1.25rem;
-    line-height: 2rem;
-}
-
 /*************************************  
  HEADER STYLES  
 **************************************/
-
 .header {
     height: 7.5rem;
     display: flex;
@@ -137,7 +132,6 @@ BUTTON STYLES
 /*************************************  
  EQ SECTION STYLES  
 **************************************/
-
 .eq {
     width: 100%;
     height: 37.5rem;
@@ -155,7 +149,6 @@ BUTTON STYLES
         position: relative;
         z-index: 2;
     }
-
     .eq__art {
         margin: auto;
         position: absolute;
@@ -165,44 +158,53 @@ BUTTON STYLES
         z-index: 1;
      }
 
-    /*************************************  
-    PREMIUM STYLES  
-    **************************************/
-    .premium {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        color: #FCFAF9;
-        width: 100%;
-        max-width: 23.438rem;
-        height: 34.125rem;
-        margin: 0 auto;
-        background-color: #FA7453;
-        border-radius: 12px;
-        position: relative;
-        z-index: 2;
-        top: -1.5rem; 
-    }
-        .premium-eq {
-            display: flex;
-            flex-direction: column;
-        }
+/*************************************  
+PREMIUM DIV STYLES  
+**************************************/
+.premium {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #FCFAF9;
+    width: 100%;
+    max-width: 23.438rem;
+    height: 34.125rem;
+    margin: 0 auto;
+    background-color: #FA7453;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+    top: -1.5rem; 
+}
 
-        .premium-eq__heading {
-            margin-bottom: 0;
-        }
+/*************************************  
+PREMIUM EQ STYLES  
+**************************************/
+.premium-eq {
+    display: flex;
+    flex-direction: column;
+}
+    .premium-eq__heading {
+        margin-bottom: 0;
+    }
+
+    .premiun__price {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
 
 /*************************************  
 FOOTER STYLES  
 **************************************/
-
 .footer {
     width: 90%;
     max-width: 23rem;
     margin: 25.5rem auto 5rem;
 }
     .footer__text {
+        font-size: 1rem;
+        line-height: 1.625rem;
         max-width: 23rem;
     }
     .footer__logo {
@@ -228,8 +230,12 @@ MEDIA QUERIES
 @media (min-width: 768px) { 
     html {
         background-image: url("../assets/bg-main-tablet.png");
-        background-position: 95% -70%;
+        background-position: 80% -20%;
         background-size: 1283px 1108px;
+    }
+
+    main {
+        margin-bottom: 10rem;
     }
 
     h1 {
@@ -268,35 +274,29 @@ MEDIA QUERIES
             top: -8rem;
             left: 3.63rem;
         }
-
         .eq__art {
             top: -2rem;
             left: 15rem;
             margin: 0;
         }
 
-        .premium {
-            width: 24.938rem;
-            position: absolute;
-            top: 10rem;
-            right: 3.63rem;
-        }
+    .premium {
+        width: 24.938rem;
+        position: absolute;
+        top: 10rem;
+        right: 3.63rem;
+    }
 
     .footer {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         max-width: none;
+        margin-top: 0;
     }
         .footer__logo {
             width: 100%;
         }
-
-        .footer__text {
-            width: 50%;
-            
-        }
-
         .footer__icons {
            margin-top: 0;
            margin-left: auto;
@@ -308,6 +308,10 @@ MEDIA QUERIES
         background-image: url("../assets/bg-main-desktop.png");
         background-position: 60% 75%;
         background-size: 119.563rem 128.625rem;
+    }
+
+    main {
+        margin-bottom: 16.5rem;
     }
 
     h1 {
@@ -336,7 +340,6 @@ MEDIA QUERIES
         top: -9rem;
         left: 7rem;
     }
-
     .eq__art {
         top: 1.8rem;
         left: 21.6rem;
@@ -352,15 +355,13 @@ MEDIA QUERIES
         justify-content: space-between;
     }
         .footer__logo {
-            width: 13%;
+            width: 16%;
             margin-bottom: auto;
         }
-
         .footer__text {
             margin-top: 0;
             margin-right: 15rem;
         }
-
         .footer__icons {
            margin: 0;
         }
