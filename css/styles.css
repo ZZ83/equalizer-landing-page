@@ -47,6 +47,10 @@ p {
     line-height: 1.75rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 span {
     font-size: 4.063rem;
     line-height: 3.25rem;
@@ -54,6 +58,10 @@ span {
 
 main {
     margin-bottom: 20rem;
+}
+
+strong a {
+    color: #191826;
 }
 
 /*************************************  
@@ -372,7 +380,6 @@ MEDIA QUERIES
 @media (min-width: 1250px) { 
     html {
         background-position: 60% 150%;
-        
     }
 
     h1 {
