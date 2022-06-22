@@ -56,6 +56,10 @@ button {
     line-height: 2rem;
 }
 
+main {
+    margin-bottom: 20rem;
+}
+
 footer {
     overflow-x: hidden;
 }
@@ -71,7 +75,7 @@ footer p {
 }
 
 .wrapper {
-    max-width: 90rem;
+    max-width: 78.125rem;
 }
     .container {
         width: 90%;
@@ -106,7 +110,6 @@ footer p {
     }
 
     .eq__art {
-        position: absolute;
         margin: auto;
         position: absolute;
         top: 0; 
@@ -124,7 +127,7 @@ footer p {
         border-radius: 12px;
         position: relative;
         z-index: 2;
-        top: -3rem; 
+        top: -1.5rem; 
     }
 
 /*************************************  
@@ -179,25 +182,29 @@ MEDIA QUERIES
 
     .eq {
         width: 90%;
-        margin: 0 auto;
+        max-width: 1250px;
+        margin: auto;
+        margin-top: 15rem;
     }
         .eq__image {
             width: 16.888rem;
             height: 34.75rem;
             position: absolute;
-            left: 15rem;
+            top: -8rem;
+            left: 3.63rem;
         }
 
         .eq__art {
-            top: -8.2rem;
-            overflow: clip;
+            top: -2rem;
+            left: 15rem;
+            margin: 0;
         }
 
         .premium {
             width: 24.938rem;
             position: absolute;
             top: 10rem;
-            right: 5rem;
+            right: 3.63rem;
         }
 }
 
@@ -231,10 +238,19 @@ MEDIA QUERIES
     .eq__image {
         width: 19.5rem;
         height: 40.125rem;
+        top: -9rem;
+        left: 7rem;
     }
+
+    .eq__art {
+        top: 1.8rem;
+        left: 21.6rem;
+    }
+
     .premium {
         width: 27.875rem;
         height: 39.063rem;
+        right: 7rem;
     }
 }
 
