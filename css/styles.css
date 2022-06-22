@@ -22,6 +22,7 @@ body {
     overflow-x: hidden;
 }
 
+a,
 h1,
 h2,
 span,
@@ -51,11 +52,6 @@ span {
     line-height: 3.25rem;
 }
 
-button {
-    font-size: 1.125rem;
-    line-height: 2rem;
-}
-
 main {
     margin-bottom: 20rem;
 }
@@ -67,6 +63,50 @@ footer {
 footer p {
     font-size: 1rem;
     line-height: 1.625rem;
+}
+
+/*************************************  
+BUTTON STYLES  
+**************************************/
+
+.btn {
+    height: 3.813rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-bottom: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--ios {
+    color: #FCFAF9;
+    background-color: #191826;
+}
+
+.btn--android {
+    color: #191826;
+    background-color: #FCFAF9;
+}
+
+.btn::before {
+    padding-top:   0.3rem;
+    padding-right: 0.6rem;
+}
+
+.btn--ios::before {
+    content: url(../assets/icon-apple.svg);
+}
+
+.btn--android::before {
+    content: url(../assets/icon-android.svg);
+}
+
+.buttons {
+    width: 90%;
+    margin-top: -2rem;
 }
 
 .wrapper,
@@ -85,6 +125,17 @@ footer p {
 .price p {
     font-size: 1.25rem;
     line-height: 2rem;
+}
+
+/*************************************  
+ HEADER STYLES  
+**************************************/
+
+.header {
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 /*************************************  
@@ -118,9 +169,17 @@ footer p {
         z-index: 1;
      }
 
+    /*************************************  
+    PREMIUM STYLES  
+    **************************************/
     .premium {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         color: #FCFAF9;
-        width: 23.438rem;
+        width: 100%;
+        max-width: 23.438rem;
         height: 34.125rem;
         margin: 0 auto;
         background-color: #FA7453;
@@ -129,17 +188,14 @@ footer p {
         z-index: 2;
         top: -1.5rem; 
     }
+        .premium-eq {
+            display: flex;
+            flex-direction: column;
+        }
 
-/*************************************  
- HEADER STYLES  
-**************************************/
-
-.header {
-    height: 7.5rem;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
+        .premium-eq__heading {
+            margin-bottom: 0;
+        }
 
 /*************************************  
 MEDIA QUERIES
