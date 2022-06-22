@@ -216,6 +216,9 @@ FOOTER STYLES
         align-items: center;
         justify-content: space-between;
     }
+    .footer__icons svg:hover {
+        fill: #FA7453;
+    }
 
 /*************************************  
 MEDIA QUERIES
