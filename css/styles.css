@@ -51,12 +51,6 @@ span {
     line-height: 3.25rem;
 }
 
-/* Might change later when working on eq div */
-.price p {
-    font-size: 1.25rem;
-    line-height: 2rem;
-}
-
 button {
     font-size: 1.125rem;
     line-height: 2rem;
@@ -71,11 +65,6 @@ footer p {
     line-height: 1.625rem;
 }
 
-img {
-    width: 13.125rem;
-    height: 26.875rem;
-}
-
 .wrapper,
 .container {
     margin: 0 auto;
@@ -88,10 +77,55 @@ img {
         width: 90%;
     }
 
+/* Might change later when working on eq div */
+.price p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+/*************************************  
+ EQ SECTION STYLES  
+**************************************/
+
 .eq {
+    width: 100%;
+    height: 37.5rem;
+    margin-top: 10rem;
     border-radius: 12px;
     background-color: #191826;
+    position: relative;
 }
+    .eq__image {
+        width: 13.061rem;
+        height: 26.875rem;
+        display: block;
+        margin: 0 auto;
+        top: -6rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .eq__art {
+        position: absolute;
+        margin: auto;
+        position: absolute;
+        top: 0; 
+        left: 0; 
+        right: 0;
+        z-index: 1;
+     }
+
+    .premium {
+        color: #FCFAF9;
+        width: 23.438rem;
+        height: 34.125rem;
+        margin: 0 auto;
+        background-color: #FA7453;
+        border-radius: 12px;
+        position: relative;
+        z-index: 2;
+        top: -3rem; 
+    }
 
 /*************************************  
  HEADER STYLES  
@@ -142,6 +176,29 @@ MEDIA QUERIES
         width: 70%;
         max-width: 53.125rem;
     }
+
+    .eq {
+        width: 90%;
+        margin: 0 auto;
+    }
+        .eq__image {
+            width: 16.888rem;
+            height: 34.75rem;
+            position: absolute;
+            left: 15rem;
+        }
+
+        .eq__art {
+            top: -8.2rem;
+            overflow: clip;
+        }
+
+        .premium {
+            width: 24.938rem;
+            position: absolute;
+            top: 10rem;
+            right: 5rem;
+        }
 }
 
 @media (min-width: 1110px) { 
@@ -169,6 +226,15 @@ MEDIA QUERIES
 
     .header__art {
         right: -10rem;
+    }
+
+    .eq__image {
+        width: 19.5rem;
+        height: 40.125rem;
+    }
+    .premium {
+        width: 27.875rem;
+        height: 39.063rem;
     }
 }
 
