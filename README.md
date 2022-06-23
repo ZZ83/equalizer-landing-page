@@ -47,7 +47,7 @@ I learned more about working with background images and the position property.
 
 ### Continued development
 
-While I did learn more about the background position property, I know that there is stll more I can learn about background in general.
+While I did learn more about the background-position property, I know that there is still more I can learn about the background in general.
 
 ## Author
 
