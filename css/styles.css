@@ -285,6 +285,7 @@ MEDIA QUERIES
 
     .premium {
         width: 24.938rem;
+        max-width: none;
         position: absolute;
         top: 10rem;
         right: 3.63rem;
@@ -345,17 +346,18 @@ MEDIA QUERIES
         width: 19.5rem;
         height: 40.125rem;
         top: -12rem;
-        left: 8.4rem;
+        left: 6.5rem;
     }
     .eq__art {
         top: -1.2rem;
-        left: 23rem;
+        left: 21.1rem;
     }
 
     .premium {
         width: 27.875rem;
         height: 39.063rem;
-        right: 8.4rem;
+        right: 6.5rem;
+        top: 7.3rem;
     }
 
     .footer {
