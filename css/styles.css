@@ -111,21 +111,14 @@ BUTTON STYLES
     background-color: #FFB964;
 }
 
-.btn::before {
-    padding-top:   0.3rem;
-    padding-right: 0.6rem;
-}
-.btn--ios::before {
-    content: url(../assets/icon-apple.svg);
-}
-.btn--android::before {
-    content: url(../assets/icon-android.svg);
-}
-
 .buttons {
     width: 90%;
     margin-top: -2rem;
 }
+    .buttons svg {
+        margin-top:   -0.1rem;
+        margin-right: 0.7rem;
+    }
 
 /*************************************  
  HEADER STYLES  
