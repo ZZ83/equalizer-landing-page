@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned more about working with background images and the position property.
+I learned more about working with background images and the background-position property.
 
 ### Continued development
 
