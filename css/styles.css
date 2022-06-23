@@ -309,7 +309,7 @@ MEDIA QUERIES
 @media (min-width: 1110px) { 
     html {
         background-image: url("../assets/bg-main-desktop.png");
-        background-position: 50% 200%;
+        background-position: 50% 1000%;
         background-size: 119.563rem 128.625rem;
     }
 
@@ -337,21 +337,25 @@ MEDIA QUERIES
         right: -10rem;
     }
 
+    .intro {
+        margin-bottom: 20rem;
+    }
+
     .eq__image {
         width: 19.5rem;
         height: 40.125rem;
-        top: -9rem;
-        left: 7rem;
+        top: -12rem;
+        left: 8.4rem;
     }
     .eq__art {
-        top: 1.8rem;
-        left: 21.6rem;
+        top: -1.2rem;
+        left: 23rem;
     }
 
     .premium {
         width: 27.875rem;
         height: 39.063rem;
-        right: 7rem;
+        right: 8.4rem;
     }
 
     .footer {
@@ -372,7 +376,7 @@ MEDIA QUERIES
 
 @media (min-width: 1250px) { 
     html {
-        background-position: 60% 150%;
+        background-position: 60% 275%;
     }
 
     h1 {
